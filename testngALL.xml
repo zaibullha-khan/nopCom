@@ -8,7 +8,7 @@
 <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
   <test thread-count="1" name="Test">
     <classes>
-       <class name="nopCom.AddProdcutPageTest"/>
+      <class name="nopCom.AddProdcutPageTest"/>
       <class name="nopCom.RegPageTest"/>
       <class name="nopCom.LoginTest"/>
       <class name="nopCom.IndexPageTest"/>

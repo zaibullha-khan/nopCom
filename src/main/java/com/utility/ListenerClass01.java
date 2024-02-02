@@ -35,7 +35,8 @@ public class ListenerClass01 extends ExtentManager implements ITestListener {
 		// TODO Auto-generated method stub
 		String imgPath = Action.screenShot(BaseClass.driver, result.getName());
 		
-		if (result.getStatus() == ITestResult.FAILURE) {
+		if (result.getStatus() == ITestResult.FAILURE) 
+		{
 			try {
 				test.log(Status.FAIL,MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 				
@@ -43,8 +44,10 @@ public class ListenerClass01 extends ExtentManager implements ITestListener {
 				
 				test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
 				
-				
-			} catch (IOException e) {
+			}
+			
+			catch (IOException e) 
+			{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}

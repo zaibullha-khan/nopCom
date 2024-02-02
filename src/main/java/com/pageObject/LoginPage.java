@@ -36,10 +36,10 @@ public class LoginPage {
 	}
 		
 	public void EmailFields(String Id)
-		{
+	{
 			Action.type(EmailField, Id);
 		
-		}
+	}
 	public void passwordFields(String Ps)
 	{
 		

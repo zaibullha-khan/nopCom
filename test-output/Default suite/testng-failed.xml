@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nopCom.IndexPageTest">
+      <class name="DataBaseTesting.DataBaseTestingClass">
         <methods>
-          <include name="TitleValidate"/>
-          <include name="OpenWebsit"/>
-          <include name="closeBrowser"/>
-          <include name="setup"/>
+          <include name="datatest"/>
         </methods>
-      </class> <!-- nopCom.IndexPageTest -->
+      </class> <!-- DataBaseTesting.DataBaseTestingClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,17 +24,17 @@ public class DataBaseTestingClass {
 	Statement stmt = con.createStatement();
     ResultSet resultSet = stmt.executeQuery("SELECT * FROM data_table");
     ////
-    FileInputStream file = new FileInputStream(new File("E:\\DataBaseTest1.xlsx"));
-    //FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"\\DataBaseTest1.xlsx"));
+  //FileInputStream file = new FileInputStream(new File("E:\\DataBaseTest.xlsx"));
+    FileInputStream file = new FileInputStream(new File(System.getProperty("user.dir")+"\\DataFiles\\DataBaseTest.xlsx"));
     XSSFWorkbook workbook = new XSSFWorkbook(file);
     XSSFSheet sheet = workbook.getSheetAt(0);
     ////
     while (resultSet.next()) 
     {
         String usname = resultSet.getString("User_name"); // Assuming 'id' is a column in the database table
-        String pass1 = resultSet.getString("password"); // Assuming 'name' is a column in the database tabl
-        ////
         String us = sheet.getRow(count).getCell(0).getStringCellValue(); // Assuming ID is in the first column in Excel
+        ////
+        String pass1 = resultSet.getString("password"); // Assuming 'name' is a column in the database tabl 
         String ps = sheet.getRow(count).getCell(1).getStringCellValue(); // Assuming Name is in the second column in Excel
         //// Comparison and assertion
         if (usname.equals(us) && pass1.equals(ps)) 
