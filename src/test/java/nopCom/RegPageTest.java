@@ -21,7 +21,7 @@ public class RegPageTest extends BaseClass {
 	      RegPage reg;
 		  IndexPage index;
 		@Parameters("url")
-		@BeforeClass(groups= { "smoke","sanity","Regression"})//	Compulsory (groups= { "smoke","sanity","Regression"}) should take here if doing grouping testing
+		@BeforeClass(groups= { "smoke","sanity","Regression"})//	Compulsory (groups= { "smoke","sanity","Regression"}) should take here if doing grouping testing, Note regression testing
 		public void Lounch(String url)
 		{      
 		      driver.get(url);

@@ -4,16 +4,19 @@
   <parameter name="browser" value="chrome"/>
   <parameter name="url" value="https://demo.nopcommerce.com/"/>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="nopCom.IndexPageTest">
+      <class name="nopCom.RegPageTest">
         <methods>
-          <include name="TitleValidate"/>
-          <include name="OpenWebsit"/>
           <include name="closeBrowser"/>
+          <include name="RegTest" invocation-numbers="0 1 2 3 4 5 6"/>
           <include name="setup"/>
-          <include name="RegBtnClickValidate"/>
         </methods>
-      </class> <!-- nopCom.IndexPageTest -->
+      </class> <!-- nopCom.RegPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

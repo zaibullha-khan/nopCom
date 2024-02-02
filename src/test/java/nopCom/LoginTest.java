@@ -55,6 +55,7 @@ public class LoginTest extends BaseClass {
 		Boolean disp=loginPage.LogInBtnDisplay();
 		Assert.assertTrue(disp);
 	}
+	
 	@Test(dataProvider="LoginData",groups= "sanity")
 	public void loginTestValids(String user,String pwd,String exp) throws InterruptedException
 	{   

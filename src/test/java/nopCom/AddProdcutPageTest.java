@@ -25,7 +25,7 @@ public class AddProdcutPageTest extends BaseClass
 { 
 	AddProductPage addProduct;
 	@Parameters("url")
-	@BeforeMethod(groups= { "smoke","sanity","Regression"})//	Compulsory (groups= { "smoke","sanity","Regression"}) should take here if doing grouping testing
+	@BeforeMethod(groups= {"smoke","sanity","Regression"})//	Compulsory (groups= { "smoke","sanity","Regression"}) should take here if doing grouping testing
 	public void openWebsite(String url) throws InterruptedException
 	{
 		driver.get(url);
