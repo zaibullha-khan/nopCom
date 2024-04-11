@@ -33,12 +33,14 @@
   
 <dependencies>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
 <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.5.1</version>
-    <scope>test</scope>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.4.0</version> <!-- Use the appropriate version -->
+        <scope>test</scope>
 </dependency>
+	
 <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 <dependency>
     <groupId>com.mysql</groupId>
